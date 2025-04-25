@@ -1,11 +1,44 @@
 # test_guide.py
 
 # A module to centrally define the test phase information
-    
+
+##################
+####  TRAINING ###
+##################
 def get_train_start(phase):
-    start_dates = {1:'2013-01-01',
-                   2:'2014-01-01',
-                   3:'2015-01-01',
-                   4:'2016-01-01',
-                   5:'2017-01-01'}            
-    return start_dates.get(phase)
+    train_start_dates = {1.1:'2018-01-01',
+                         1.2:'2017-01-01'}            
+    return train_start_dates.get(phase)
+    
+def get_train_end(phase):
+    train_end_dates = {1.1:'2020-12-01',
+                       1.2:'2019-12-01'}            
+    return train_end_dates.get(phase)
+    
+    
+####################
+####  VALIDATION ###
+####################
+def get_val_start(phase):
+    val_start_dates = {1.1:'2021-01-01',
+                       1.2:'2020-01-01'}            
+    return val_start_dates.get(phase)
+    
+def get_val_end(phase):
+    val_end_dates = {1.1:'2021-12-01',
+                     1.2:'2020-12-01'}            
+    return val_end_dates.get(phase)
+
+
+##############
+####  TEST ###
+##############
+def get_test_start(phase):
+    test_start_dates = {1.1:'2022-01-01',
+                        1.2:'2021-01-01'}            
+    return test_start_dates.get(phase)
+    
+def get_test_end(phase):
+    test_end_dates = {1.1:'2022-12-01',
+                      1.2:'2021-12-01'}            
+    return test_end_dates.get(phase)
